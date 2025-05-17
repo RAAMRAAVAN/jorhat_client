@@ -95,7 +95,7 @@ const Overview = () => {
               src={
                 doctorDetails?.doctor_image
                   ? `https://barpetacancercentre.org/images/allLocationDoctors/${doctorDetails.doctor_image}`
-                  : `/Doctors/doctor_image.webp`
+                  : `/doctor_image.webp`
               }
               alt="Doctor Image"
               width={300}
@@ -103,7 +103,7 @@ const Overview = () => {
               priority={true}
               quality={10}
               placeholder="blur"
-              blurDataURL="/Doctors/doctor_image.webp"
+              blurDataURL="/doctor_image.webp"
               style={{
                 objectFit: "cover",      // Maintain aspect ratio, crop if needed
                 objectPosition: "center", // Center the image

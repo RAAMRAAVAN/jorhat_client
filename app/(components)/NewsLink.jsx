@@ -41,7 +41,7 @@ export default function NewsLink() {
                     // border: '1px black solid',
                     // objectFit: 'cover', // or 'contain' to avoid cropping
                   }}
-                  image={`News/news.jpg`}
+                  image={`news.jpg`}
                   alt="green iguana"
                 />
               </Box>

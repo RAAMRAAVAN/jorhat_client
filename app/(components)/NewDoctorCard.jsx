@@ -48,7 +48,7 @@ const NewDoctorCard = ({ id, image, name, speciality, designation, department, q
   useEffect(() => {
     const imageUrl = image
       ? `https://barpetacancercentre.org/images/allLocationDoctors/${image}`
-      : "/Doctors/doctor_image.webp";
+      : "/doctor_image.webp";
     preloadImage(imageUrl)
       .then((src) => setPreloadedImage(src))
       .catch(() => console.error("Image preload failed"));
@@ -93,7 +93,7 @@ const NewDoctorCard = ({ id, image, name, speciality, designation, department, q
               }}
             >
               <Avatar
-                src={preloadedImage || "/Doctors/doctor_image.webp"}
+                src={preloadedImage || "/doctor_image.webp"}
                 alt={name}
                 sx={{
                   width: "100%",

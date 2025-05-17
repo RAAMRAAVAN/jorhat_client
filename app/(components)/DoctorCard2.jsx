@@ -15,7 +15,7 @@ const DoctorCard2 = ({ image, name = "No Name", speciality = "Speciality Not Ava
             <Box sx={{ width: 150, height: 150, borderRadius: "50%", overflow: "hidden", border: "3px solid #ddd" }}>
               <ExportedImage
                 src={`https://barpetacancercentre.org/images/allLocationDoctors/${image}`}
-                // src='/Doctors/doctor_image.webp'
+                // src='/doctor_image.webp'
                 alt='./Doctors/default.png'
                 width={150}
                 height={150}
@@ -27,7 +27,7 @@ const DoctorCard2 = ({ image, name = "No Name", speciality = "Speciality Not Ava
 
           ) : <Box sx={{ width: 150, height: 150, borderRadius: "50%", overflow: "hidden", border: "3px solid #ddd" }}>
             <ExportedImage
-              src={`/Doctors/doctor_image.webp`}
+              src={`/doctor_image.webp`}
               alt='image'
               width={150}
               height={150}

@@ -4,7 +4,7 @@ import Entries from "./entries";
 import { API, color1, color4, color6, color7, HName } from "@/app/(components)/Global";
 import VideoGrid from "@/app/(components)/Videos/VideoGrid";
 import Facilities from '@/app/(components)/News2/FacilityData'
-import ParallelogramGrid from './ParallelogramGrid';
+// import ParallelogramGrid from './ParallelogramGrid';
 import {VideosAccess} from '../../../lib/fetchData';
 const page = async () => {
     const HoName = HName;
@@ -28,7 +28,7 @@ const page = async () => {
             </Box>
         </Box>
         <Box position='relative' display='none'>
-            <ParallelogramGrid />
+            {/* <ParallelogramGrid /> */}
             <Box
                 bottom='0px'
                 // sx={{background: `linear-gradient(to left, rgba(191, 30, 46, 1), rgba(255, 123, 0, 1))`,}}

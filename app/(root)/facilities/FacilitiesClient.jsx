@@ -6,7 +6,7 @@ import Facilities from "../../(components)/FacilitiesNew2/FacilityData";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { HName } from '@/lib/fetchData';
-import ParallelogramGrid from "./ParallelogramGrid";
+// import ParallelogramGrid from "./ParallelogramGrid";
 import { color6, color7 } from "@/app/(components)/Global";
 
 const FacilitiesClient = () => {
@@ -53,7 +53,7 @@ const FacilitiesClient = () => {
                 </Box>
             </Box>
             <Box position='relative' display='none'>
-                <ParallelogramGrid />
+                {/* <ParallelogramGrid /> */}
                 <Box
                     bottom='0px'
                     // sx={{ background: `linear-gradient(to left, rgba(191, 30, 46, 1), rgba(255, 123, 0, 1))`, }}

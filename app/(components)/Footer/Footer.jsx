@@ -80,14 +80,17 @@ const Footer = () => {
                 {/* Contact Us */}
                 <Grid item xs={12} sm={6} lg={3}>
                     <Typography  variant="h6" mb={1}>Contact Us</Typography>
+                    {hospitalData.PhoneNumber !== null?
                     <Typography  color="gray" fontSize="14px" display="flex" alignItems="center" mb={1} component="a"
-                        href={`tel:${hospitalData.PhoneNumber || ""}`} sx={{ textDecoration: "none", cursor: "pointer", '&:hover':{color: 'black'} }}>
-                        <Phone sx={{ color: "gray", mr: 1 }} /> {hospitalData.PhoneNumber || "Not Available"}
-                    </Typography>
+                        href={`tel:${hospitalData.PhoneNumber}`} sx={{ textDecoration: "none", cursor: "pointer", '&:hover':{color: 'black'} }}>
+                        <Phone sx={{ color: "gray", mr: 1 }} /> {hospitalData.PhoneNumber}
+                    </Typography>:<></>}
                     <Typography  color="gray" fontSize="14px" display="flex" alignItems="center" mb={1} component="a"
-                        href={`tel: 18003454325}`} sx={{ textDecoration: "none", cursor: "pointer", '&:hover':{color: 'black'} }}>
-                        <Phone sx={{ color: "gray", mr: 1 }} /> 18003454325
+                        href={`tel:${hospitalData.TollFreeNumber || ""}`} sx={{ textDecoration: "none", cursor: "pointer", '&:hover':{color: 'black'} }}>
+                        <Phone sx={{ color: "gray", mr: 1 }} /> {hospitalData.TollFreeNumber || "Not Available"}
                     </Typography>
+                    
+                    
                     {/* <Typography  color="gray" fontSize="14px" display="flex" alignItems="center" mb={1} component="a"
                         href={`https://wa.me/9435647725`}
                         target="_blank"

@@ -12,8 +12,8 @@ const ContactPage = ({ handleClose, doctorDetails}) => {
             <Grid item display='flex' flexDirection='row' md={6} sm={12} alignItems='center' width='100%' className="doctor-modal-list" padding={1} style={{ boxShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)", cursor: 'pointer' }}>
                 <Grid item xs={5} display='flex' alignItems='center' width='100px' height='100px' borderRadius='50%'>
                     {doctorDetails.doctor_image?<img src={`https://barpetacancercentre.org/images/allLocationDoctors/${doctorDetails.doctor_image}`} alt='imgs' style={{ borderRadius: '50%', boxShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)", display: 'felx', width: '100px', height: '100px' }} />
-                    :<img src={`/Doctors/doctor_image.webp`} alt='imgs' style={{ borderRadius: '50%', boxShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)", display: 'felx', width: '100px', height: '100px' }} />}
-                    {/* {`/Doctors/doctor_image.webp`} */}
+                    :<img src={`/doctor_image.webp`} alt='imgs' style={{ borderRadius: '50%', boxShadow: "1px 1px 3px rgba(0, 0, 0, 0.2)", display: 'felx', width: '100px', height: '100px' }} />}
+                    {/* {`/doctor_image.webp`} */}
                 </Grid>
                 <Grid item xs={7}>
                     <Typography  fontWeight='bold' overflow="hidden"

@@ -53,8 +53,8 @@ const ContactPage = () => {
                         <Box display="flex" alignItems="center" my={2}>
                             <Phone sx={{ mr: 1 }} />
                             <Typography  fontSize={13} color="#d3d3d3" component="a"
-                                href={`tel:${HospitalDetails.PhoneNumber || ""}`} sx={{ textDecoration: "none", cursor: "pointer" }}>
-                                {HospitalDetails?.PhoneNumber || "Not Available"}
+                                href={`tel:${HospitalDetails.TollFreeNumber || ""}`} sx={{ textDecoration: "none", cursor: "pointer" }}>
+                                {HospitalDetails?.TollFreeNumber || "Not Available"}
                             </Typography>
                         </Box>
 
@@ -124,8 +124,8 @@ const ContactPage = () => {
                         <Box display="flex" alignItems="center" my={2}>
                             <Phone sx={{ mr: 1 }} />
                             <Typography  fontSize={13} color="#d3d3d3" component="a"
-                                href={`tel:${HospitalDetails.PhoneNumber || ""}`} sx={{ textDecoration: "none", cursor: "pointer" }}>
-                                {HospitalDetails?.PhoneNumber || "Not Available"}
+                                href={`tel:${HospitalDetails.TollFreeNumber || ""}`} sx={{ textDecoration: "none", cursor: "pointer" }}>
+                                {HospitalDetails?.TollFreeNumber || "Not Available"}
                             </Typography>
                         </Box>
 
